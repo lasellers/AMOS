@@ -5,7 +5,7 @@ Lewis A. Sellers
 intrafoundation.com
 March 2003
 
-  A 2-day experiment with A-Life.
+A 2-day experiment with A-Life.
 */
 
 #include "stdafx.h"
