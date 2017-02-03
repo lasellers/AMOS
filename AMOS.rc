@@ -1,0 +1,322 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_AMOS                ICON                    "AMOS.ICO"
+
+IDI_SMALL               ICON                    "SMALL.ICO"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_AMOS MENU
+BEGIN
+    POPUP "&App"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "Controls"
+    BEGIN
+        MENUITEM "Reset\tBACKSPACE",            IDM_RESET
+        MENUITEM SEPARATOR
+        MENUITEM "Pause\tPAUSE",                IDM_STOP
+        MENUITEM "Resume\tSPACEBAR",            IDM_RUN
+        MENUITEM SEPARATOR
+        POPUP "Speed"
+        BEGIN
+            MENUITEM "10 ms",                       IDM_SPEED10
+            MENUITEM "50 ms",                       IDM_SPEED50
+            MENUITEM "100 ms",                      IDM_SPEED100
+            MENUITEM ".5 seconds",                  IDM_SPEED500
+            MENUITEM "1 second",                    IDM_SPEED1000
+            MENUITEM "10 seconds",                  IDM_SPEED10000
+        END
+        POPUP "Units Per Frame"
+        BEGIN
+            MENUITEM "1",                           IDM_UNITS_1
+            MENUITEM "10",                          IDM_UNITS_10
+            MENUITEM "100",                         IDM_UNITS_100
+        END
+    END
+    POPUP "Options"
+    BEGIN
+        POPUP "Number of Tribes"
+        BEGIN
+            MENUITEM "One\t1",                      IDM_TRIBES1
+            MENUITEM "Two\t2",                      IDM_TRIBES2
+            MENUITEM "Three\t3",                    IDM_TRIBES3
+            MENUITEM "Four\t4",                     IDM_TRIBES4
+            MENUITEM "Five\t5",                     IDM_TRIBES5
+            MENUITEM "Six\t6",                      IDM_TRIBES6
+            MENUITEM "Seven\t7",                    IDM_TRIBES7
+            MENUITEM "Eight\t8",                    IDM_TRIBES8
+        END
+        MENUITEM SEPARATOR
+        POPUP "Migration"
+        BEGIN
+            MENUITEM "No Collective Strategy\tCTRL-N", IDM_MIGRATION_NONE
+            MENUITEM "Inward\tCTRL-I",              IDM_MIGRATION_INWARD
+            MENUITEM "Outward\tCTRL-O",             IDM_MIGRATION_OUTWARD
+            MENUITEM "Aggression\tCTRL-A",          IDM_MIGRATION_AGGRESSION
+            MENUITEM "Center\tCTRL-C",              IDM_MIGRATION_CENTER
+            MENUITEM "Helter Skelter (global round-robin\tCTRL-H", IDM_MIGRATION_HELTERSKELTER
+            MENUITEM "Off Path (local round-robin)\tCTRL-L", IDM_MIGRATION_OFFPATH
+            MENUITEM "Path\tCTRL-P",                IDM_MIGRATION_PATH
+            MENUITEM "Food\tCTRL-F",                IDM_MIGRATION_FOOD
+            MENUITEM SEPARATOR
+            MENUITEM "Your Routine 1",              IDM_MIGRATION_YOUR_ROUTINE_1
+            MENUITEM "Your Routine 2",              IDM_MIGRATION_YOUR_ROUTINE_2
+        END
+        POPUP "Birth Food"
+        BEGIN
+            MENUITEM "Constant Birth (1)",          IDM_BIRTHFOOD1
+            MENUITEM "Low (4)",                     IDM_BIRTHFOOD4
+            MENUITEM "Moderate (8)",                IDM_BIRTHFOOD8
+            MENUITEM "High (12)",                   IDM_BIRTHFOOD12
+            MENUITEM "No Births (15)",              IDM_BIRTHFOOD15
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Use System Sound Cues",       IDM_USEDEFAULTSOUNDCUES
+    END
+    POPUP "Acts of God"
+    BEGIN
+        MENUITEM "Disaster\tDELETE",            IDM_DISASTER
+        MENUITEM "Fortune\tINSERT",             IDM_FORTUNE
+        MENUITEM "Super Fortune\tHOME",         IDM_SUPERFORTUNE
+    END
+    POPUP "Toggles"
+    BEGIN
+        POPUP "Wrap Around"
+        BEGIN
+            MENUITEM "Off\tALT-SCROLL",             IDM_WRAPAROUNDOFF
+            MENUITEM "On\tSCROLL",                  IDM_WRAPAROUNDON
+        END
+        POPUP "War"
+        BEGIN
+            MENUITEM "Off\tALT-W",                  IDM_WAROFF
+            MENUITEM "On\tW",                       IDM_WARON
+        END
+        POPUP "Rebellion"
+        BEGIN
+            MENUITEM "Off\tALT-R",                  IDM_REBELLIONOFF
+            MENUITEM "On\tR",                       IDM_REBELLIONON
+        END
+        POPUP "Cities"
+        BEGIN
+            MENUITEM "Off\tALT-C",                  IDM_CITIESOFF
+            MENUITEM "On\tC",                       IDM_CITIESON
+        END
+        POPUP "Carrying"
+        BEGIN
+            MENUITEM "Off\tALT-X",                  IDM_CARRYINGOFF
+            MENUITEM "On\tX",                       IDM_CARRYINGON
+        END
+        POPUP "Wastelands"
+        BEGIN
+            MENUITEM "Off\tALT-L",                  IDM_WASTELANDSOFF
+            MENUITEM "On\tL",                       IDM_WASTELANDSON
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&Contents",                   IDM_CONTENTS
+        MENUITEM "&Index",                      IDM_INDEX
+        MENUITEM "&Find",                       IDM_FIND
+        MENUITEM SEPARATOR
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_AMOS ACCELERATORS
+BEGIN
+    "/",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "1",            IDM_TRIBES1,            VIRTKEY, NOINVERT
+    "2",            IDM_TRIBES2,            VIRTKEY, NOINVERT
+    "3",            IDM_TRIBES3,            VIRTKEY, NOINVERT
+    "4",            IDM_TRIBES4,            VIRTKEY, NOINVERT
+    "5",            IDM_TRIBES5,            VIRTKEY, NOINVERT
+    "6",            IDM_TRIBES6,            VIRTKEY, NOINVERT
+    "7",            IDM_TRIBES7,            VIRTKEY, NOINVERT
+    "8",            IDM_TRIBES8,            VIRTKEY, NOINVERT
+    "?",            IDM_ABOUT,              ASCII,  ALT, NOINVERT
+    "A",            IDM_MIGRATION_AGGRESSION, VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_CITIESON,           VIRTKEY, NOINVERT
+    "C",            IDM_MIGRATION_CENTER,   VIRTKEY, CONTROL, NOINVERT
+    "C",            IDM_CITIESOFF,          VIRTKEY, ALT, NOINVERT
+    "F",            IDM_MIGRATION_FOOD,     VIRTKEY, CONTROL, NOINVERT
+    "H",            IDM_HERD_DECISIONSON,   VIRTKEY, NOINVERT
+    "H",            IDM_MIGRATION_HELTERSKELTER, VIRTKEY, CONTROL, NOINVERT
+    "H",            IDM_HERD_DECISIONSOFF,  VIRTKEY, ALT, NOINVERT
+    "I",            IDM_MIGRATION_INWARD,   VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_WASTELANDSON,       VIRTKEY, NOINVERT
+    "L",            IDM_MIGRATION_OFFPATH,  VIRTKEY, CONTROL, NOINVERT
+    "L",            IDM_WASTELANDSOFF,      VIRTKEY, ALT, NOINVERT
+    "O",            IDM_MIGRATION_OUTWARD,  VIRTKEY, CONTROL, NOINVERT
+    "P",            IDM_MIGRATION_PATH,     VIRTKEY, CONTROL, NOINVERT
+    "R",            IDM_REBELLIONON,        VIRTKEY, NOINVERT
+    "R",            IDM_REBELLIONOFF,       VIRTKEY, ALT, NOINVERT
+    VK_BACK,        IDM_RESET,              VIRTKEY, NOINVERT
+    VK_DELETE,      IDM_DISASTER,           VIRTKEY, NOINVERT
+    VK_HOME,        IDM_SUPERFORTUNE,       VIRTKEY, NOINVERT
+    VK_INSERT,      IDM_FORTUNE,            VIRTKEY, NOINVERT
+    VK_PAUSE,       IDM_STOP,               VIRTKEY, NOINVERT
+    VK_SCROLL,      IDM_WRAPAROUNDON,       VIRTKEY, NOINVERT
+    VK_SCROLL,      IDM_WRAPAROUNDOFF,      VIRTKEY, ALT, NOINVERT
+    VK_SPACE,       IDM_RUN,                VIRTKEY, NOINVERT
+    "W",            IDM_WARON,              VIRTKEY, NOINVERT
+    "W",            IDM_WAROFF,             VIRTKEY, ALT, NOINVERT
+    "X",            IDM_CARRYINGON,         VIRTKEY, NOINVERT
+    "X",            IDM_CARRYINGOFF,        VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 22, 17, 275, 64
+STYLE DS_SETFONT | DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "System", 0, 0, 0x0
+BEGIN
+    ICON            IDI_AMOS,IDC_MYICON,13,11,20,20
+    LTEXT           "AMOS Version 15",IDC_STATIC,44,8,125,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2003, 2004 by Lewis A. Sellers",IDC_STATIC,43,30,156,8
+    DEFPUSHBUTTON   "OK",IDOK,243,51,30,11,WS_GROUP
+    CTEXT           "Intrafoundation.com",IDC_STATIC,185,5,88,13,SS_SUNKEN
+    LTEXT           "A-World Sim",IDC_STATIC,43,19,156,8
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+2 TEXTINCLUDE 
+BEGIN
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""resource.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE_START          WAVE                    "start.wav"
+
+IDR_WAVE_DEATH          WAVE                    "death.wav"
+
+IDR_WAVE_TOTALDEATH     WAVE                    "totaldeath.wav"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        RIGHTMARGIN, 273
+        BOTTOMMARGIN, 62
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_APP_TITLE           "A-MOS - Intrafoundation.com - v15"
+    IDC_AMOS                "A-MOS"
+END
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
