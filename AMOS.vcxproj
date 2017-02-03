@@ -276,6 +276,7 @@ copy Release\*.exe</Command>
   </ItemGroup>
   <ItemGroup>
     <Image Include="AMOS.ico" />
+    <Image Include="screenshot1.png" />
     <Image Include="small.ico" />
   </ItemGroup>
   <ItemGroup>
